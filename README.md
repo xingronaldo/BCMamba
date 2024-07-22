@@ -39,12 +39,12 @@ Put them in `./checkpoints`.
 * Test on the SV-CD dataset with the MobileNetV2 backbone
 
 ```python
-python test.py --name SV-CD_mobilenetv2 --gpu_ids 1
+python test.py --name SV-CD--gpu_ids 1
 ```
 
 ## Train & Validation
 ```python
-python trainval.py --gpu_ids 1 --name --name SV-CD_mobilenetv2
+python trainval.py --gpu_ids 1 --name --name SV-CD
 ```
 All the hyperparameters can be adjusted in `option.py`.
 
