@@ -44,7 +44,7 @@ python test.py --name SV-CD_mobilenetv2 --gpu_ids 1
 
 ## Train & Validation
 ```python
-python trainval.py --gpu_ids 1 
+python trainval.py --gpu_ids 1 --name --name SV-CD_mobilenetv2
 ```
 All the hyperparameters can be adjusted in `option.py`.
 
