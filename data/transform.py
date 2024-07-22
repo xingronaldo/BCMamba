@@ -29,7 +29,8 @@ class Transforms(object):
             img1 = TF.rotate(img1, angle)
             img2 = TF.rotate(img2, angle)
             cd_label = TF.rotate(cd_label, angle)
-        """
+        # not used for SV-CD
+        """ 
         if random.random() < 0.5:
             colorjitters = []
             brightness_factor = random.uniform(0.5, 1.5)
