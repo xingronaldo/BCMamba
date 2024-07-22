@@ -29,7 +29,7 @@ class Model(nn.Module):
         self.dice = DICELoss()
 
         self.optimizer = optim.AdamW(self.detector.parameters(), lr=opt.lr, weight_decay=opt.weight_decay)
-        # Here, 625 = #training images // batch_size. 
+        # Here, 625 = #training images // batch_size. Update it for different datasets.
         self.schedular = get_cosine_schedule_with_warmup(self.optimizer, num_warmup_steps=625 * opt.warmup_epochs,
                                                          num_training_steps=625 * opt.num_epochs)
         if opt.load_pretrain:
