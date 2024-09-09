@@ -5,7 +5,7 @@ Here I provide the PyTorch implementation for BCMamba.
 
 ## ENVIRONMENT
 >RTX 3090<br>
->cuda 1.8.0<br>
+>cuda 11.8.0<br>
 >PyTorch 2.0.0<br>
 >python 3.8<br>
 >mmcv 1.6.0<br>
